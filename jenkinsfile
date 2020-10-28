@@ -1,14 +1,15 @@
 pipeline{
 	agent any
 	stages {
-		stage('one'){
+		stage('Building'){
 			steps{
 				echo "In Stage 1 - Building Stage"
 			}
 		}
-		stage('two'){
+		stage('Testing'){
 			steps{
 				echo "In Stage 2 - Testing Stage"
+				bat python --version
 			}
 		}
 	}	
