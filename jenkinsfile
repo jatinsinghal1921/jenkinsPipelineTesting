@@ -1,0 +1,15 @@
+pipeline{
+	agents any
+	stages {
+		stage('one'){
+			steps{
+				echo "In Stage 1 - Building Stage"
+			}
+		}
+		stage('two'){
+			steps{
+				echo "In Stage 2 - Testing Stage"
+			}
+		}
+	}	
+}
