@@ -9,7 +9,7 @@ pipeline{
 		stage('Testing'){
 			steps{
 				echo "In Stage 2 - Testing Stage"
-				/bin/sh/ python --version
+				/bin/sh python --version
 			}
 		}
 	}	
